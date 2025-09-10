@@ -1,10 +1,10 @@
-# 🛡️ Scout Regiment - Attack on Titan Team
+# 🛡️ Grupo 13 Desarrollo Frontend
 
 ## 📋 Descripción del Proyecto
 
-Este trabajo práctico consiste en el desarrollo de un sitio web temático inspirado en el anime "Attack on Titan", donde cada integrante del equipo presenta su perfil como miembro del **Scout Regiment**. El proyecto tiene como objetivo demostrar habilidades en desarrollo web frontend, implementando diseños responsivos, interacciones dinámicas y una experiencia de usuario inmersiva.
+Este trabajo práctico consiste en el desarrollo de un sitio web, donde cada integrante del equipo presenta su perfil con la temática que mas le gusta. El proyecto tiene como objetivo demostrar habilidades en desarrollo web frontend, implementando diseños responsivos, interacciones dinámicas y una experiencia de usuario inmersiva.
 
-El sitio incluye páginas individuales para cada miembro del equipo, con diseños de cards interactivas que muestran información personal y profesional, todo enmarcado en la estética y narrativa del universo de Attack on Titan.
+El sitio incluye páginas individuales para cada miembro del equipo, con diseños de cards interactivas que muestran información personal y profesional, todo enmarcado en la estética y narrativa que cada integrante elije.
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -23,7 +23,7 @@ El sitio incluye páginas individuales para cada miembro del equipo, con diseño
 ```
 DSW-grupo13/
 │
-├── index.html                 # Página principal del equipo
+├── index.html                # Página principal del equipo
 ├── marcos.html               # Página individual de Marcos
 ├── member2.html              # Página del segundo miembro
 ├── member3.html              # Página del tercer miembro
@@ -39,7 +39,7 @@ DSW-grupo13/
 ├── js/
 │   ├── main.js              # JavaScript principal
 │   ├── marcos.js            # Funciones específicas de Marcos
-│   └── animations.js        # Animaciones generales
+│   
 │
 ├── img/
 │   ├── escudo.png           # Logo del Scout Regiment
@@ -141,7 +141,7 @@ _Desplegado en Vercel con integración continua desde GitHub_
 1. **Clonar el repositorio**:
 
    ```bash
-   git clone https://github.com/tu-usuario/DSW-grupo13.git
+   git clone https://github.com/jbenitez79/DSW-grupo13 
    cd DSW-grupo13
    ```
 
@@ -170,7 +170,7 @@ _Desplegado en Vercel con integración continua desde GitHub_
 
 ### 📝 Notas de Desarrollo
 
-> "Dedicad vuestros corazones" - Como el Scout Regiment, este proyecto representa nuestro compromiso con la excelencia en el desarrollo web, explorando nuevas tecnologías y defendiendo las mejores prácticas de programación.
+> Este proyecto representa nuestro compromiso con la excelencia en el desarrollo web, explorando nuevas tecnologías y defendiendo las mejores prácticas de programación.
 
 **Última actualización**: SEPTIEMBRE 2025
 **Versión**: 1.0.0
@@ -178,4 +178,4 @@ _Desplegado en Vercel con integración continua desde GitHub_
 
 ---
 
-_Desarrollado con 💚 por el Scout Regiment Team_
+_Desarrollado con 💚 por el Grupo 7_
