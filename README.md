@@ -97,7 +97,7 @@ El sitio web está optimizado para diferentes tamaños de pantalla:
 
 ## 🌟 Características Destacadas
 
-- **🎨 Diseño temático**: Inspirado en Attack on Titan con paleta de colores auténtica
+- **🎨 Diseño temático**: Marcos inspirado en Attack on Titan con paleta de colores auténtica
 - **⚡ Animaciones suaves**: Transiciones CSS3 y JavaScript coordinadas
 - **🔄 Cards interactivas**: Sistema de volteo con información detallada
 - **📱 100% Responsive**: Adaptación perfecta a todos los dispositivos
