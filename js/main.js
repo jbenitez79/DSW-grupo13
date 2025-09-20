@@ -1,17 +1,64 @@
-// Attack on Titan Team - JavaScript Principal
+// JavaScript Principal
 // Funciones globales y navegación general del sitio
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('🛡️ Inicializando Scout Regiment Site - JavaScript Global');
+    console.log('🛡️ Inicializando Site - JavaScript Global');
     
     // Inicializar funciones globales
     initGlobalNavigation();
     initLoadingEffects();
     initGlobalAnimations();
     initAccessibilityFeatures();
+    initHamburgerMenu(); // Agregamos el menú hamburguesa
     
     console.log('⚔️ Main.js cargado - "Dedicad vuestros corazones"');
 });
+
+/**
+ * Menú hamburguesa para móviles
+ * Funcionalidad para ocultar/mostrar navegación en dispositivos pequeños
+ */
+function initHamburgerMenu() {
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('header nav ul');
+    
+    if (toggle && navList) {
+        toggle.addEventListener('click', function() {
+            navList.classList.toggle('open');
+            this.classList.toggle('active');
+            
+            // Agregar aria-label para accesibilidad
+            const isOpen = navList.classList.contains('open');
+            this.setAttribute('aria-expanded', isOpen);
+            this.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+            
+            console.log('🍔 Menú hamburguesa:', isOpen ? 'abierto' : 'cerrado');
+        });
+        
+        // Cerrar menú al hacer click en un enlace (en móviles)
+        const navLinks = navList.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 900) {
+                    navList.classList.remove('open');
+                    toggle.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+        
+        // Cerrar menú al redimensionar ventana
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 900) {
+                navList.classList.remove('open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+        
+        console.log('✅ Menú hamburguesa inicializado');
+    }
+}
 
 /**
  * Navegación interactiva global
@@ -214,9 +261,17 @@ function initAccessibilityFeatures() {
             window.location.href = 'marcos.html';
         }
         
-        // Escape para cerrar modales/overlays
+        // Escape para cerrar modales/overlays y menú hamburguesa
         if (e.key === 'Escape') {
             closeAllModals();
+            // Cerrar menú hamburguesa también
+            const navList = document.querySelector('header nav ul');
+            const toggle = document.querySelector('.menu-toggle');
+            if (navList && toggle) {
+                navList.classList.remove('open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
         }
     });
     
