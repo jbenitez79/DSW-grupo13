@@ -1,42 +1,251 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Grupo 13</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
+      <div class="header-content">
         <h1>Contacto</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <p class="header-subtitle">¿Tienes alguna consulta? Escríbenos</p>
+      </div>
+      <nav>
+        <button class="menu-toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Sobre el Proyecto</a></li>
+          <li><a href="contact.html" class="active">Contacto</a></li>
+          <li><a href="bitacora.html">Bitácora</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-        <section>
-            <h2>Contáctanos</h2>
-            <form action="#" method="post">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Ponte en Contacto</h2>
+          <p>
+            Estamos aquí para responder tus preguntas sobre nuestro proyecto
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Información de Contacto</h3>
+              <div class="contact-card">
+                <div class="contact-item">
+                  <div class="contact-icon">📧</div>
+                  <div class="contact-details">
+                    <h4>Email del Equipo</h4>
+                    <p>grupo13.dsw@ifts29.edu.ar</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">🏫</div>
+                  <div class="contact-details">
+                    <h4>Institución</h4>
+                    <p>IFTS N°29 - Tecnicatura en Desarrollo de Software</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">📅</div>
+                  <div class="contact-details">
+                    <h4>Período Académico</h4>
+                    <p>2025 - Segundo Cuatrimestre</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">💻</div>
+                  <div class="contact-details">
+                    <h4>Repositorio GitHub</h4>
+                    <p>
+                      <a href="https://github.com/jbenitez79/DSW-grupo13" target="_blank">github.com/jbenitez79/DSW-grupo13</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team-contact">
+                <h4>Contactos Individuales</h4>
+                <ul class="team-contact-list">
+                  <li>
+                    <strong>Marcos:</strong> marcos@estudiante.ifts29.edu.ar
+                  </li>
+                  <li>
+                    <strong>Cecilia:</strong> cecilia@estudiante.ifts29.edu.ar
+                  </li>
+                  <li>
+                    <strong>Mariano:</strong> mariano@estudiante.ifts29.edu.ar
+                  </li>
+                  <li>
+                    <strong>J. Benítez:</strong>
+                    jbenitez@estudiante.ifts29.edu.ar
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="contact-form-container">
+              <h3>Envíanos un Mensaje</h3>
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <label for="name">Nombre Completo *</label>
+                  <input type="text" id="name" name="name" required />
+                  <span class="form-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Correo Electrónico *</label>
+                  <input type="email" id="email" name="email" required />
+                  <span class="form-error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Asunto *</label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Selecciona un asunto</option>
+                    <option value="consulta-proyecto">
+                      Consulta sobre el proyecto
+                    </option>
+                    <option value="colaboracion">
+                      Propuesta de colaboración
+                    </option>
+                    <option value="feedback">Feedback del sitio web</option>
+                    <option value="error-tecnico">
+                      Reporte de error técnico
+                    </option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <span class="form-error" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Mensaje *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                    placeholder="Escribe aquí tu mensaje..."
+                  ></textarea>
+                  <span class="form-error" id="messageError"></span>
+                </div>
+
+                <div class="form-group checkbox-group">
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      id="privacy"
+                      name="privacy"
+                      required
+                    />
+                    <span class="checkmark"></span>
+                    Acepto la
+                    <a href="#" target="_blank">política de privacidad</a> *
+                  </label>
+                  <span class="form-error" id="privacyError"></span>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                  <span>Enviar Mensaje</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h3>Preguntas Frecuentes</h3>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h4>¿Cuál es el objetivo del proyecto?</h4>
+              <p>
+                Demostrar habilidades en desarrollo frontend moderno aplicando
+                HTML5, CSS3, JavaScript y diseño responsivo.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>¿Qué tecnologías utilizaron?</h4>
+              <p>
+                HTML5, CSS3, JavaScript ES6+, Git, GitHub, responsive design y
+                mejores prácticas de accesibilidad.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>¿El sitio es responsive?</h4>
+              <p>
+                Sí, está optimizado para funcionar perfectamente en móviles,
+                tablets y escritorio.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>¿Pueden colaborar en otros proyectos?</h4>
+              <p>
+                Estamos abiertos a colaboraciones y oportunidades de
+                aprendizaje. Contáctanos para más información.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Grupo 13</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre el Proyecto</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="bitacora.html">Bitácora</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Integrantes</h5>
+          <ul>
+            <li><a href="marcos.html">Marcos</a></li>
+            <li><a href="cecilia.html">Cecilia</a></li>
+            <li><a href="mariano.html">Mariano</a></li>
+            <li><a href="jbenitez.html">J. Benítez</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Proyecto</h5>
+          <p>Desarrollo Frontend - Grupo 13</p>
+          <p>Tecnicatura en Desarrollo de Software</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Grupo 13 - Todos los derechos reservados</p>
+      </div>
     </footer>
+
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

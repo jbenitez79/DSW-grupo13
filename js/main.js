@@ -298,7 +298,7 @@ function initEventListeners() {
     window.addEventListener('resize', debounce(handleWindowResize, 250));
     
     // Scroll global
-    window.addEventListener('scroll', throttle(handleGlobalScroll, 16));
+    //window.addEventListener('scroll', throttle(handleGlobalScroll, 16));
     
     // Cambio de visibilidad de la página
     document.addEventListener('visibilitychange', handleVisibilityChange);
@@ -329,7 +329,7 @@ function getCurrentBreakpoint() {
 
 /**
  * Manejar scroll global
- */
+ 
 function handleGlobalScroll() {
     const scrollY = window.scrollY;
     const header = document.querySelector('header');
@@ -344,7 +344,7 @@ function handleGlobalScroll() {
             header.style.backdropFilter = 'none';
         }
     }
-}
+}*/
 
 /**
  * Manejar cambio de visibilidad de página

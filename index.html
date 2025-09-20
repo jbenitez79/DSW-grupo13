@@ -1,44 +1,258 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portada | Grupo 13</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Google Fonts  -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <h1>Grupo 13 - DSW</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="about.html">Sobre el Proyecto</a>
-      <a href="contact.html">Contacto</a>
-    </nav>
-  </header>
-  <main>
-    <section class="presentacion">
-      <h2>Bienvenidos</h2>
-      <p>Somos el Grupo 13 de DSW. Nuestro objetivo es crear un sitio web moderno, adaptable y fácil de navegar, aplicando buenas prácticas de desarrollo web.</p>
-    </section>
-    <section class="integrantes">
-      <h3>Integrantes</h3>
-      <ul>
-        <li><a href="marcos.html">Marcos</a></li>
-        <li><a href="member2.html">Nombre 2</a></li>
-        <li><a href="mariano.html">Mariano</a></li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="about.html">Sobre el Proyecto</a>
-      <a href="contact.html">Contacto</a>
-    </nav>
-    <p>&copy; 2025 Grupo 13</p>
-  </footer>
-  <script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupo 13 - Desarrollo Frontend</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Grupo 13 - Desarrollo Frontend</h1>
+        <p class="header-subtitle">Tecnicatura en Desarrollo de Software</p>
+      </div>
+      <nav>
+        <button class="menu-toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="about.html">Sobre el Proyecto</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="bitacora.html">Bitácora</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Bienvenidos a Nuestro Proyecto</h2>
+          <p>
+            Somos el Grupo 13 de Desarrollo de Software Web. Cada integrante ha
+            creado su página personal con su temática favorita, aplicando las
+            mejores prácticas de desarrollo frontend.
+          </p>
+        </div>
+      </section>
+
+      <section class="team-section">
+        <div class="container">
+          <h3>Conoce a Nuestro Equipo</h3>
+          <p class="team-description">
+            Cada miembro ha desarrollado su perfil único con tecnologías
+            modernas
+          </p>
+
+          <div class="team-grid">
+            <!-- Card de Marcos -->
+            <div
+              class="member-card"
+              data-member="marcos"
+              onclick="location.href='marcos.html'"
+            >
+              <div class="card-image">
+                <img
+                  src="img/marcos1.jpeg"
+                  alt="Marcos - Attack on Titan"
+                  loading="lazy"
+                />
+                <div class="card-overlay">
+                  <div class="overlay-content">
+                    <h4 class="overlay-name">Marcos</h4>
+                    <p class="overlay-specialty">Scout Regiment Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="member-name">Marcos Martin</h4>
+                <p class="member-role">Frontend Developer</p>
+                <p class="member-description">
+                  Especializado en Attack on Titan theme con animaciones CSS
+                  avanzadas
+                </p>
+                <div class="member-skills">
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">CSS3</span>
+                  <span class="skill-tag">Animations</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card de Cecilia -->
+            <div
+              class="member-card"
+              data-member="cecilia"
+              onclick="location.href='cecilia.html'"
+            >
+              <div class="card-image">
+                <img
+                  src="img/cecilia/cecilia.jpg"
+                  alt="Cecilia - Music & Movies"
+                  loading="lazy"
+                />
+                <div class="card-overlay">
+                  <div class="overlay-content">
+                    <h4 class="overlay-name">Cecilia</h4>
+                    <p class="overlay-specialty">Music & Movies Enthusiast</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="member-name">Cecilia F.</h4>
+                <p class="member-role">Frontend Developer</p>
+                <p class="member-description">
+                  Enfocada en música y cine con diseño creativo y UX
+                </p>
+                <div class="member-skills">
+                  <span class="skill-tag">UX/UI</span>
+                  <span class="skill-tag">Typography</span>
+                  <span class="skill-tag">Media</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card de Mariano -->
+            <div
+              class="member-card"
+              data-member="mariano"
+              onclick="location.href='mariano.html'"
+            >
+              <div class="card-image">
+                <img
+                  src="img/mariano-foto-perfil.png"
+                  alt="Mariano - Portfolio Personal"
+                  loading="lazy"
+                />
+                <div class="card-overlay">
+                  <div class="overlay-content">
+                    <h4 class="overlay-name">Mariano</h4>
+                    <p class="overlay-specialty">Personal Portfolio</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="member-name">Mariano</h4>
+                <p class="member-role">Frontend Developer</p>
+                <p class="member-description">
+                  Portfolio personal con diseño minimalista y funcionalidad
+                  moderna
+                </p>
+                <div class="member-skills">
+                  <span class="skill-tag">Clean Code</span>
+                  <span class="skill-tag">Performance</span>
+                  <span class="skill-tag">Minimal</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card de J. Benítez -->
+            <div
+              class="member-card"
+              data-member="jbenitez"
+              onclick="location.href='jbenitez.html'"
+            >
+              <div class="card-image">
+                <img
+                  src="img/jb-contacto.png"
+                  alt="J. Benítez - Professional Theme"
+                  loading="lazy"
+                />
+                <div class="card-overlay">
+                  <div class="overlay-content">
+                    <h4 class="overlay-name">J. Benítez</h4>
+                    <p class="overlay-specialty">Professional Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="member-name">J. Benítez</h4>
+                <p class="member-role">Frontend Developer</p>
+                <p class="member-description">
+                  Enfoque profesional, clean code y optimización de rendimiento
+                </p>
+                <div class="member-skills">
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">Testing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-info">
+        <div class="container">
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-icon">🚀</div>
+              <h4>Tecnologías Modernas</h4>
+              <p>
+                HTML5, CSS3, JavaScript ES6+, diseño responsive y animaciones
+                avanzadas
+              </p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">📱</div>
+              <h4>Diseño Responsivo</h4>
+              <p>
+                Optimizado para todos los dispositivos: móviles, tablets y
+                escritorio
+              </p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">🎨</div>
+              <h4>Temáticas Únicas</h4>
+              <p>
+                Cada integrante desarrolló su página con una estética
+                personalizada
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre el Proyecto</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="bitacora.html">Bitácora</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Integrantes</h5>
+          <ul>
+            <li><a href="marcos.html">Marcos</a></li>
+            <li><a href="cecilia.html">Cecilia</a></li>
+            <li><a href="mariano.html">Mariano</a></li>
+            <li><a href="jbenitez.html">J. Benítez</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Proyecto</h5>
+          <p>Desarrollo Frontend - Grupo 13</p>
+          <p>Tecnicatura en Desarrollo de Software</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Grupo 13 - Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

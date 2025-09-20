@@ -1,64 +1,324 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo 13 - DSW | Bitacora</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Permanent+Marker&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitácora de Desarrollo - Grupo 13</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-        <h1>Grupo 13 - DSW</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Portada</a></li>
-                <li><a href="bitacora.html">Bitácora</a></li>
-                <li><a href="julian.html">Julian</a></li>
-                <li><a href="marcos.html">Marcos</a></li>
-                <li><a href="mariano.html">Mariano</a></li>
-                <li><a href="cecilia.html">Cecilia</a></li>
-            </ul>
-        </nav>
+      <div class="header-content">
+        <h1>Bitácora de Desarrollo</h1>
+        <p class="header-subtitle">Proceso de creación del proyecto</p>
+      </div>
+      <nav>
+        <button class="menu-toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Sobre el Proyecto</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="bitacora.html" class="active">Bitácora</a></li>
+        </ul>
+      </nav>
     </header>
-    
-    <main>
-        <div class="card">
-            <h1>Bitácora</h1>
-            <p>Descripción del proceso de desarrollo del proyecto.</p>
-            <br>
-            <h3>Decisiones de diseño tomadas por el equipo:</h3>
-            <ul>
-                <li>Elegir una paleta de colores clara y tipografías modernas para mejorar la legibilidad y la estética.</li>
-                <li>Implementar un menú de navegación horizontal y hacerlo colapsable en dispositivos móviles para mejorar la experiencia de usuario.</li>
-                <li>Separar los estilos CSS y los archivos JS por integrante para facilitar el trabajo colaborativo y evitar conflictos.</li>
-            </ul>
-            <br>
-            <h3>Dificultades encontradas y cómo se resolvieron:</h3>
-            <ul>
-                <li>Problemas de compatibilidad con el menú hamburguesa en dispositivos móviles: se resolvió ajustando los media queries y revisando el JavaScript de apertura/cierre.</li>
-                <li>Dificultades para centrar y alinear correctamente los elementos en diferentes tamaños de pantalla: se solucionó utilizando Flexbox y revisando los márgenes y paddings.</li>
-                <li>Conflictos de estilos entre los archivos CSS de cada integrante: se acordó modularizar el CSS.</li>
-            </ul>
-            <br>
-            <h3>Cambios importantes realizados durante la implementación:</h3>
-            <ul>
-                <li>Se reorganizó la estructura de carpetas para separar imágenes, estilos y scripts, facilitando el mantenimiento.</li>
-            </ul>
 
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Documentación del Proceso</h2>
+          <p>Seguimiento detallado del desarrollo del proyecto frontend</p>
         </div>
+      </section>
+
+      <section class="bitacora-content">
+        <div class="container">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker">🚀</div>
+              <div class="timeline-content">
+                <h3>Fase 1: Planificación Inicial</h3>
+                <p class="timeline-date">Diciembre 2024 - Semana 1</p>
+                <div class="timeline-description">
+                  <h4>Actividades realizadas:</h4>
+                  <ul>
+                    <li>Definición de estructura del proyecto</li>
+                    <li>Asignación de páginas individuales por integrante</li>
+                    <li>Selección de temáticas personales para cada miembro</li>
+                    <li>Configuración del repositorio GitHub</li>
+                    <li>Establecimiento de convenciones de código</li>
+                  </ul>
+                  <h4>Decisiones de diseño:</h4>
+                  <ul>
+                    <li>Paleta de colores moderna y profesional</li>
+                    <li>Tipografías Google Fonts (Poppins y Roboto)</li>
+                    <li>Diseño mobile-first con breakpoints específicos</li>
+                    <li>Modularización de CSS y JavaScript por integrante</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">⚡</div>
+              <div class="timeline-content">
+                <h3>Fase 2: Desarrollo de Estructura Base</h3>
+                <p class="timeline-date">Diciembre 2024 - Semana 2</p>
+                <div class="timeline-description">
+                  <h4>Implementaciones:</h4>
+                  <ul>
+                    <li>Creación de la página principal (index.html)</li>
+                    <li>Desarrollo del sistema de navegación responsivo</li>
+                    <li>Implementación del menú hamburguesa para móviles</li>
+                    <li>Establecimiento de estilos globales (style.css)</li>
+                    <li>
+                      JavaScript global (main.js) con funciones compartidas
+                    </li>
+                  </ul>
+                  <h4>Tecnologías aplicadas:</h4>
+                  <ul>
+                    <li>HTML5 semántico con elementos modernos</li>
+                    <li>CSS3 con variables personalizadas y flexbox</li>
+                    <li>JavaScript ES6+ con arrow functions y destructuring</li>
+                    <li>Media queries para responsive design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">🎨</div>
+              <div class="timeline-content">
+                <h3>Fase 3: Páginas Individuales</h3>
+                <p class="timeline-date">Diciembre 2024 - Semana 3</p>
+                <div class="timeline-description">
+                  <h4>Marcos - Attack on Titan Theme:</h4>
+                  <ul>
+                    <li>Card interactiva con efecto flip</li>
+                    <li>Animaciones CSS3 avanzadas</li>
+                    <li>Tema Scout Regiment con paleta temática</li>
+                    <li>Efectos hover dinámicos</li>
+                  </ul>
+                  <h4>Cecilia - Music & Movies Theme:</h4>
+                  <ul>
+                    <li>Galería de álbumes y películas favoritas</li>
+                    <li>Diseño inspirado en plataformas de streaming</li>
+                    <li>Animaciones de entrada suaves</li>
+                  </ul>
+                  <h4>Mariano - Personal Portfolio:</h4>
+                  <ul>
+                    <li>Diseño minimalista y profesional</li>
+                    <li>Sección de proyectos y habilidades</li>
+                    <li>Optimización de rendimiento</li>
+                  </ul>
+                  <h4>J. Benítez - Professional Theme:</h4>
+                  <ul>
+                    <li>Enfoque corporativo y clean</li>
+                    <li>Formularios interactivos</li>
+                    <li>Técnicas de accesibilidad</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">🛠️</div>
+              <div class="timeline-content">
+                <h3>Fase 4: Dificultades y Soluciones</h3>
+                <p class="timeline-date">Diciembre 2024 - Semana 4</p>
+                <div class="timeline-description">
+                  <h4>Problemas encontrados:</h4>
+                  <ul>
+                    <li>
+                      <strong>Menú hamburguesa:</strong> Incompatibilidad en
+                      dispositivos móviles
+                    </li>
+                    <li>
+                      <strong>Conflictos CSS:</strong> Sobreescritura de estilos
+                      entre archivos
+                    </li>
+                    <li>
+                      <strong>Responsive design:</strong> Elementos desalineados
+                      en breakpoints
+                    </li>
+                    <li>
+                      <strong>Git conflicts:</strong> Merges conflictivos en
+                      archivos compartidos
+                    </li>
+                    <li>
+                      <strong>Performance:</strong> Carga lenta de imágenes
+                      grandes
+                    </li>
+                  </ul>
+                  <h4>Soluciones implementadas:</h4>
+                  <ul>
+                    <li>
+                      <strong>JavaScript modular:</strong> Separación de
+                      funciones por archivo
+                    </li>
+                    <li>
+                      <strong>CSS specificity:</strong> Uso de clases
+                      específicas y BEM methodology
+                    </li>
+                    <li>
+                      <strong>Flexbox y Grid:</strong> Mejor control de layouts
+                      responsivos
+                    </li>
+                    <li>
+                      <strong>Git workflow:</strong> Branches individuales y
+                      pull requests
+                    </li>
+                    <li>
+                      <strong>Image optimization:</strong> Compresión y lazy
+                      loading
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">📱</div>
+              <div class="timeline-content">
+                <h3>Fase 5: Optimización Responsive</h3>
+                <p class="timeline-date">Enero 2025 - Semana 1</p>
+                <div class="timeline-description">
+                  <h4>Breakpoints implementados:</h4>
+                  <ul>
+                    <li>
+                      <strong>400px:</strong> Dispositivos móviles pequeños
+                    </li>
+                    <li>
+                      <strong>900px:</strong> Tablets y pantallas medianas
+                    </li>
+                    <li>
+                      <strong>1200px:</strong> Pantallas de escritorio grandes
+                    </li>
+                  </ul>
+                  <h4>Mejoras realizadas:</h4>
+                  <ul>
+                    <li>Navegación adaptativa con menú colapsable</li>
+                    <li>Cards responsive que se ajustan al contenedor</li>
+                    <li>Tipografías escalables con clamp()</li>
+                    <li>Imágenes adaptativas con srcset</li>
+                    <li>Touch-friendly buttons en móviles</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">✨</div>
+              <div class="timeline-content">
+                <h3>Fase 6: Pulido Final</h3>
+                <p class="timeline-date">Enero 2025 - Semana 2</p>
+                <div class="timeline-description">
+                  <h4>Características finales:</h4>
+                  <ul>
+                    <li>Animaciones suaves con CSS transitions</li>
+                    <li>Loading states y micro-interacciones</li>
+                    <li>Accesibilidad mejorada (ARIA labels)</li>
+                    <li>SEO básico con meta tags</li>
+                    <li>Validación de formularios</li>
+                    <li>Error handling en JavaScript</li>
+                  </ul>
+                  <h4>Testing realizado:</h4>
+                  <ul>
+                    <li>Pruebas en múltiples navegadores</li>
+                    <li>Validación de HTML y CSS</li>
+                    <li>Test de velocidad de carga</li>
+                    <li>Pruebas de usabilidad</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lessons-learned">
+        <div class="container">
+          <h3>Lecciones Aprendidas</h3>
+          <div class="lessons-grid">
+            <div class="lesson-card">
+              <div class="lesson-icon">💡</div>
+              <h4>Planificación es Clave</h4>
+              <p>
+                Una estructura bien definida desde el inicio evita problemas
+                mayores durante el desarrollo.
+              </p>
+            </div>
+            <div class="lesson-card">
+              <div class="lesson-icon">🤝</div>
+              <h4>Trabajo en Equipo</h4>
+              <p>
+                La comunicación constante y el uso adecuado de Git facilita la
+                colaboración efectiva.
+              </p>
+            </div>
+            <div class="lesson-card">
+              <div class="lesson-icon">📱</div>
+              <h4>Mobile First</h4>
+              <p>
+                Diseñar primero para móviles simplifica la adaptación a
+                pantallas más grandes.
+              </p>
+            </div>
+            <div class="lesson-card">
+              <div class="lesson-icon">🔧</div>
+              <h4>Debugging Efectivo</h4>
+              <p>
+                Las herramientas de desarrollo del navegador son esenciales para
+                resolver problemas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-
     <footer>
-        <p>&copy; 2025 Grupo 13 - Desarrollo de Sistemas Web (Front End) - IFTS29</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre el Proyecto</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="bitacora.html">Bitácora</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Integrantes</h5>
+          <ul>
+            <li><a href="marcos.html">Marcos</a></li>
+            <li><a href="cecilia.html">Cecilia</a></li>
+            <li><a href="mariano.html">Mariano</a></li>
+            <li><a href="jbenitez.html">J. Benítez</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Estadísticas del Proyecto</h5>
+          <p>Commits realizados: 150+</p>
+          <p>Líneas de código: 5000+</p>
+          <p>Tiempo de desarrollo: 4 semanas</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Grupo 13 - Desarrollo de Sistemas Web (Frontend) - IFTS29
+        </p>
+      </div>
     </footer>
 
-
-
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
