@@ -13,16 +13,48 @@ header, footer {
   text-align: center;
 }
 
-nav a {
-  color: #fff;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: 700;
+/* HEADER */
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8rem;
+    background: #2c3e50;
 }
 
-nav a:hover {
-  text-decoration: underline;
+header nav li {
+    margin: 0;
 }
+
+header nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5em 1em;
+    display: block;
+    font-weight: bold;
+}
+
+
+/* Boton hamburguesa */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+
 
 .container {
   width: 80%;
@@ -51,7 +83,7 @@ ul li {
   margin: 0.5rem 0;
 }
 
-ul li a {
+main ul li a {
   color: #2980b9;
   text-decoration: none;
   font-weight: 500;
@@ -60,6 +92,16 @@ ul li a {
 ul li a:hover {
   text-decoration: underline;
 }
+
+
+
+
+/* FOOTER */
+footer p {
+    font-size: .8rem;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -76,6 +118,28 @@ ul li a:hover {
   }
   header, footer {
     padding: 0.5rem 0;
+  }
+  header nav ul {
+      display: none;
+      flex-direction: column;
+      /* background: #fff; */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 100;
+  }
+  header nav ul.open {
+      display: flex;
+  }
+  .menu-toggle {
+      float: right;
+      display: block;
+      color: #fff;
+  }
+  header {
+      position: relative;
   }
 }
 
