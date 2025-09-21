@@ -29,21 +29,21 @@ DSW-grupo13/
 │
 ├── 👤 Páginas Individuales:
 ├── marcos.html               # Marcos - Attack on Titan Theme
-├── cecilia.html              # Cecilia - Music & Movies Theme
+├── cecilia.html              # Cecilia - Perfil Personal
 ├── mariano.html              # Mariano - Personal Portfolio
 ├── jbenitez.html             # J. Benítez - Professional Theme
 │
 ├── css/
 │   ├── style.css            # Estilos globales y sistema de diseño
 │   ├── marcos.css           # Estilos temáticos de Attack on Titan
-│   ├── cecilia.css          # Estilos para música y cine
+│   ├── cecilia.css          # Estilos personalizados
 │   ├── mariano.css          # Estilos de portfolio personal
 │   └── jbenitez.css         # Estilos profesionales
 │
 ├── js/
 │   ├── main.js              # JavaScript global y menú hamburguesa
 │   ├── marcos.js            # Funciones específicas (card flip)
-│   ├── cecilia.js           # Interacciones de música/cine
+│   ├── cecilia.js           # Animaciones CSS y Javascript
 │   ├── mariano.js           # Funcionalidades de portfolio
 │   └── jbenitez.js          # JavaScript profesional
 │
@@ -95,15 +95,21 @@ DSW-grupo13/
 ### 🎵 Página de Cecilia (`cecilia.html`)
 
 - **Galería multimedia**:
+  - Sección de películas favoritas con enlaces a IMDB e imágenes representativas.
+  - Discografía con enlaces a Spotify e imágenes de álbumes, adaptadas responsivamente (2 por línea en móvil, 4 en desktop).
 
-  - Sección de películas favoritas con enlaces a IMDB
-  - Discografía con enlaces a Spotify
-  - Modales interactivos para detalles adicionales
+- **Animaciones y micro-interacciones**:
+  - Imagen de perfil en blanco y negro que pasa a color al hacer hover, con efecto de escala y "shake" divertido.
+  - Animación de color en el texto de habilidades, cambiando cada 3 segundos.
+  - Ventana modal flotante que aparece automáticamente tras unos segundos, preguntando si pasaste el mouse sobre la imagen de perfil, con lógica de cierre y cuenta regresiva.
 
-- **Diseño centrado en contenido**:
-  - Layout de cards organizadas horizontalmente
-  - Efectos hover en imágenes de álbumes y películas
-  - Tipografías especializadas (Source Code Pro, Permanent Marker)
+- **Diseño responsive y adaptativo**:
+  - Listas de discos/música y películas adaptadas a distintos tamaños de pantalla usando Flexbox y media queries.
+
+- **Estilos personalizados**:
+  - Tipografías especializadas (Source Code Pro, Audiowide, Permanent Marker).
+  - Paleta de colores y estilos propios en `cecilia.css`.
+  
 
 ### 💼 Páginas de Mariano y J. Benítez
 
@@ -172,20 +178,15 @@ DSW-grupo13/
 
 El archivo `bitacora.html` documenta detalladamente:
 
-- **Fase 1**: Planificación y asignación de tareas
-- **Fase 2**: Desarrollo de estructura base
-- **Fase 3**: Implementación de páginas individuales
-- **Fase 4**: Resolución de problemas técnicos
-- **Fase 5**: Optimización responsive
-- **Fase 6**: Pulido final y testing
+- **Semana 1**: Planificación Inicial y Desarrollo de Estructura Base
+- **Semana 2**: Páginas Individuales
+- **Semana 3**: Dificultades, Soluciones y Mejoras
 
 ### 🛠️ Problemas Resueltos
 
 - **Menú hamburguesa**: Z-index conflicts solucionados
-- **Responsive breakpoints**: Grid systems optimizados
 - **Cross-browser compatibility**: Testing en múltiples navegadores
 - **Git workflow**: Resolución de merge conflicts
-- **Performance**: Optimización de imágenes y CSS
 
 ## 🚀 Enlaces del Proyecto
 
