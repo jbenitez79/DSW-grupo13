@@ -50,6 +50,7 @@ header {
   padding: 2rem 0;
   box-shadow: var(--shadow-lg);
   position: relative;
+  z-index: 3000;
 }
 
 .header-content {
