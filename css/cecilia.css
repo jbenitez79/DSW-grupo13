@@ -1,12 +1,21 @@
 
+header {
+    position: relative;
+    z-index: 3000; /* higher than .profile-pic */
+}
+.nav-list {
+    margin-top: 0;
+    top: 0;
+}
+
 /* MAIN */
 main {
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
-    background-color: #bed9f338;
+    background-color: #92c1ee38;
     margin: 0;
-    padding: 0;
+    padding: 24px 40px;
     width: 100%;
     max-width: 100%;
     border-radius: 0;
@@ -17,15 +26,15 @@ main {
   font-weight: 400;
   font-style: normal;
 }
-
 .card {
     border: 1px solid #6893bd;
     border-radius: 8px;
     padding: 16px;
-    margin: 24px auto;
-    max-width: 100%;
+    max-width: 95%;
     background-color: #fff;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .card > h1, h2 {
@@ -47,6 +56,9 @@ h2 {
     margin-bottom: 20px;
     filter: grayscale(100%);
     transition: filter 0.3s, width 0.3s, height 0.3s, margin-bottom 0.3s;
+    position: relative;
+    z-index: 1;
+
 }
 
 .profile-pic:hover {
@@ -67,10 +79,6 @@ h2 {
   margin-top: 0px;
   flex-wrap: wrap;
   font-size: .9rem;
-}
-
-.lista-horizontal.musica {
-  justify-content: flex-start;
 }
 
 .lista-horizontal.musica > li {
@@ -143,7 +151,6 @@ h2 {
 
 @media (min-width: 400px) {
     .card {
-        margin: 40px;
         padding: 10px;
     }
 }
